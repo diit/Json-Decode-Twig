@@ -24,8 +24,8 @@ class JsonDecodeTwigFilterPlugin extends BasePlugin {
 	}
 
 	public function addTwigExtension() {
-
-	    Craft::import('plugins.JsonDecodeTwigFilterPlugin.twigextensions.JsonDecodeTwigExtension');
+		
+	    Craft::import('plugins.jsondecodetwigfilter.twigextensions.JsonDecodeTwigExtension');
 	    return new JsonDecodeTwigExtension();
 	}
 
