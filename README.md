@@ -32,7 +32,7 @@ Add extra data to fields like multiselect, in this example add icons from multip
 }) }}
 ```
 
-```html
+```php
 <div class="example__icons">
 	{% for rawicon in examplePlugin.icons %}
 	{% set icon = rawicon | json_decode %}
