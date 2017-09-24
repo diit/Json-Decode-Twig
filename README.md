@@ -44,4 +44,13 @@ Add extra data to fields like multiselect, in this example add icons from multip
 	{% endfor %}
 </div>
 ```
+
+## Options
+
+By default `json_decode` outputs an object but you can also output an associative array by passing `true` as a parameter value to the filter.
+
+```php
+{% set icon = rawicon | json_decode(true)  %} 
+```
+
 [Dale Inverarity](http://dale.wtf/) © 2015 - All rights reserved
