@@ -25,8 +25,8 @@ class JsonDecodeTwigExtension extends \Twig_Extension {
         return $returnArray;
     }
 
-    public function json_decode($json) {
+    public function json_decode($json, $assoc=false) {
 
-        return json_decode($json);
+        return json_decode($json, $assoc);
     }
 }
